@@ -33,11 +33,11 @@ Since we will be querying our database from Mongo Compass, you will need to copy
 
 1. This is an example
 
-- **`query`**: /_You should copy/paste the query in here_/
-- **`projection`**: /_You should copy/paste the projection in here_/
-- **`sort`**: /_You should copy/paste the sort in here_/
+- **`query`**: { "acquisition.acquired_year": {$gt: 2010 } }
+- **`projection`**: { name: 1, founded_year: 1 }
+- **`sort`**: { founded_year: 1 }
 - **`skip`**: /_You should copy/paste the skip in here_/
-- **`limit`**: /_You should copy/paste the limit in here_/
+- **`limit`**: 1000
 
 ## Instructions
 
